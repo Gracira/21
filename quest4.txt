@@ -1,9 +1,19 @@
-vim src/history_of_vim.txt
+E325: ATTENTION
+Found a swap file by the name "src/.history_of_vim.txt.swp"
+          owned by: virginwh   dated: Tue Dec 16 21:30:46 2025
+         file name: ~virginwh/D01T01.ID_1577481-1/src/history_of_vim.txt
+          modified: YES
+         user name: virginwh   host name: po-b7.stw.21-school.ru
+        process ID: 154730
+While opening file "src/history_of_vim.txt"
+             dated: Mon Dec 15 14:48:42 2025
 
-  2006 May 7  - Vim 7.0:   Spell checking, code completion, tab pages
-  2016 Sep 12 - Vim 8.0:  Asynchronous I/O, packages, timers
-  2022 Jun 28 - Vim 9.0:  Vim9 script, performance improvements
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r src/history_of_vim.txt"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "src/.history_of_vim.txt.swp"
+    to avoid this message.
 
-echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim.txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" >> src/files. log
-
-cat src/files.log
