@@ -3,3 +3,17 @@ cp src/ai_help/main.key src/ai_help/main-2.key
 git add .
 git commit -m "key-branch: add main-2.key"
 git push origin key-branch
+git checkout -b feature/3-key
+cp src/ai_help/main.key src/ai_help/main-3.key
+git add .
+git commit -m "feature/3-key: add main-3.key"
+git push origin feature/3-key
+git checkout key-branch
+git merge feature/3-key
+git push origin key-branch
+git checkout develop
+git checkout -b release/1.0
+git checkout develop
+git merge key-branch
+git push origin develop
+git branch -a
