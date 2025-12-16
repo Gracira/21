@@ -1,22 +1,22 @@
-cd ~/D01T01.ID_1577481-1
-git branch
-git checkout -b key-branch
-ls -la src/ai_help/main.key
-cp src/ai_help/main.key src/ai_help/main-2.key
-git add .
-git commit -m "key-branch: add main-2.key"
-git push origin key-branch
-git checkout -b feature/3-key
-cp src/ai_help/main.key src/ai_help/main-3.key
-git add .
-git commit -m "feature/3-key: add main-3.key"
-git push origin feature/3-key
-git checkout key-branch
-git merge feature/3-key
-git push origin key-branch
-git checkout develop
-git checkout -b release/1.0
-git checkout develop
-git merge key-branch
-git push origin develop
-git branch -a
+E325: ATTENTION
+Found a swap file by the name "src/.history_of_vim.txt.swp"
+          owned by: virginwh   dated: Tue Dec 16 21:30:46 2025
+         file name: ~virginwh/D01T01.ID_1577481-1/src/history_of_vim.txt
+          modified: YES
+         user name: virginwh   host name: po-b7.stw.21-school.ru
+        process ID: 154730
+While opening file "src/history_of_vim.txt"
+             dated: Tue Dec 16 21:46:49 2025
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r src/history_of_vim.txt"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "src/.history_of_vim.txt.swp"
+    to avoid this message.
+
+Swap file "src/.history_of_vim.txt.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
