@@ -19,7 +19,7 @@ virginwh@po-b7:~/D01T01.ID_1577481-1$
 
 sed -i '1 a\\' src/history_of_vim. txt
 
-echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim. txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" >> src/files. log
+echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim.txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" >> src/files. log
 
 cat src/files.log
 
