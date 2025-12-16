@@ -1,8 +1,6 @@
-
 touch quest4.sh
 echo 'pkill -f ai_door_control.sh' >> quest4.sh
 echo 'rm ~/D01T01.ID_1577481-1/src/ai_door_control.sh' >> quest4.sh
-rm: cannot remove '/home/virginwh/D01T01.ID_1577481-1/src/ai_door_control.sh': No such file or directory
 cd ~/D01T01.ID_1577481-1
 git add .
 git commit -m "Quest 4. Kill him"
