@@ -1,17 +1,19 @@
+Quest 7. Branches
+> Посмотреть на экран
 
-cd ~/D01T01.ID_1577481-1/src/door_management_files/door_configuration
-cat door_1.conf
-nano door_1.conf
-cd ~/D01T01.ID_1577481-1/src
-touch quest5.txt
-echo '1. cd ~/D01T01.ID_1577481-1/src/door_management_files/door_configuration' >> quest5.txt
-echo '2. nano door_1.conf' >> quest5.txt
-echo '3. Изменить STATUS:  CLOSED на STATUS: OPEN' >> quest5.txt
-echo '4. Ctrl+O (сохранить)' >> quest5.txt
-echo '5. Enter (подтвердить)' >> quest5.txt
-echo '6. Ctrl+X (выйти)' >> quest5.txt
+Ничего не меняется. Смотри не смотри, а дверь сама себя не откроет.
 
-cd ~/D01T01.ID_1577481-1
-git add . 
-git commit -m "Quest 5. Conf"
-git push origin develop
+> Ввести собранный на предыдущем шаге код
+
+Ты уже делал это. Примерно одну тысячу двести тридцать семь раз.
+
+> Изучить остальные директории
+
+Может, стоит еще посмотреть в директории src/git_for_human?
+
+> Изучить директорию src/git_for_human
+
+Оставляю тебя за этим приятным времяпрепровождением.
+
+Получен Quest 7. Создать ветки в git согласно инструкциям из папки src/git_for_human.
+
