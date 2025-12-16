@@ -1,16 +1,10 @@
-cd ~/D01T01.ID_1577481-1/src
 touch quest4.sh
 echo '#!/bin/bash' >> quest4.sh
 echo '' >> quest4.sh
 echo '# Quest 4. Kill him' >> quest4.sh
 echo '' >> quest4.sh
 echo 'pkill -f ai_door_control.sh' >> quest4.sh
-echo 'rm ai_door_control.sh' >> quest4.sh
-chmod +x quest4.sh
-cat quest4.sh
-bash quest4.sh
-ls -la ai_door_control.sh
-cd ~/D01T01.ID_1577481-1
+echo 'rm ~/D01T01.ID_1577481-1/src/ai_door_control.sh' >> quest4.sh
 git add .
 git commit -m "Quest 4. Kill him"
 git push origin develop
