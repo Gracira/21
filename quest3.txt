@@ -1,5 +1,34 @@
-git add . 
-git commit -m "Quest 8. Vim"
-git push origin develop
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git commit -m "Quest 8. Vim"
+[develop 6cc99dc] Quest 8. Vim
+ Committer: Virgin Whatarmy <virginwh@po-b7.stw.21-school.ru>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
 
-git log --oneline -1
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 12 insertions(+), 4 deletions(-)
+ create mode 100644 src/.history_of_vim.txt.swo
+ create mode 100644 src/files.
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git push origin develop
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.25 KiB | 2.25 MiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: To create a merge request for develop, visit:
+remote:   https://git.21-school.ru/students_repo/virginwh/D01T01.ID_1577481-1/-/merge_requests/new?merge_request%5Bsource_branch%5D=develop
+remote: 
+To ssh://git-ssh.21-school.ru:2222/students_repo/virginwh/D01T01.ID_1577481-1.git
+   da5cd3c..6cc99dc  develop -> develop
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git log --oneline -1
+6cc99dc (HEAD -> develop, origin/develop) Quest 8. Vim
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git log --oneline -1git log --oneline -1git log --oneline -1
