@@ -1,25 +1,14 @@
-virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ cat unifier.sh
-#!/bin/bash
+cd ~/D01T01.ID_1577481-1/src
 
-FILES=key/*
-KEY=0
+touch quest6.sh
+echo 'cd ~/D01T01.ID_1577481-1/src/ai_help' >> quest6.sh
+echo 'bash keygen.sh' >> quest6.sh
+echo 'rm key/file*' >> quest6.sh
+echo 'bash unifier.sh' >> quest6.sh
 
-for file in $FILES
-do
-    if [[ $file =~ \.key$ ]]
-    then
-        tmp=$(< $file)
-        KEY=$(($KEY + $tmp))
-    else
-        KEY=0
-        break
-    fi
-done
+cat quest6.sh
 
-if [ $KEY == 0 ]
-then
-    echo "Error."
-else
-    echo "Ok."
-    echo $(($KEY*2)) > main.key
-fi
+cd ~/D01T01.ID_1577481-1
+git add .
+git commit -m "Quest 6. Rm"
+git push origin develop
