@@ -2,3 +2,11 @@
 cd ~/D01T01.ID_1577481-1/src/door_management_files/door_configuration
 cat door_1.conf
 nano door_1.conf
+cd ~/D01T01.ID_1577481-1/src
+touch quest5.txt
+echo '1. cd ~/D01T01.ID_1577481-1/src/door_management_files/door_configuration' >> quest5.txt
+echo '2. nano door_1.conf' >> quest5.txt
+echo '3. Изменить STATUS:  CLOSED на STATUS: OPEN' >> quest5.txt
+echo '4. Ctrl+O (сохранить)' >> quest5.txt
+echo '5. Enter (подтвердить)' >> quest5.txt
+echo '6. Ctrl+X (выйти)' >> quest5.txt
