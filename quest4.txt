@@ -1,3 +1,4 @@
+
 touch quest4.sh
 echo 'pkill -f ai_door_control.sh' >> quest4.sh
 echo 'rm ~/D01T01.ID_1577481-1/src/ai_door_control.sh' >> quest4.sh
