@@ -63,3 +63,7 @@ drwxrwx--- 3 virginwh virginwh  4096 Dec 16 19:06 ..
 -rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part7.key
 -rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part8.key
 -rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part9.key
+virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ rm key/file*
+rm: cannot remove 'key/file*': No such file or directory
+virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ rm key/file*
+rm: cannot remove 'key/file*': No such file or directory
