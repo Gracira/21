@@ -1,1 +1,9 @@
-echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim.txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" > src/files. log
+vim src/history_of_vim.txt
+
+  2006 May 7  - Vim 7.0:   Spell checking, code completion, tab pages
+  2016 Sep 12 - Vim 8.0:  Asynchronous I/O, packages, timers
+  2022 Jun 28 - Vim 9.0:  Vim9 script, performance improvements
+
+echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim.txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" >> src/files. log
+
+cat src/files.log
