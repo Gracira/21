@@ -1,31 +1,24 @@
-virginwh@po-b7:~/D01T01.ID_1577481-1$ git checkout release/1.0
-Switched to branch 'release/1.0'
-virginwh@po-b7:~/D01T01.ID_1577481-1$ git merge develop
-Updating f3aeb6c..da5cd3c
-Fast-forward
- src/ai_help/main-2.key | 1 +
- src/ai_help/main-3.key | 1 +
- 2 files changed, 2 insertions(+)
- create mode 100644 src/ai_help/main-2.key
- create mode 100644 src/ai_help/main-3.key
-virginwh@po-b7:~/D01T01.ID_1577481-1$ git push origin release/1.0
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-remote: 
-remote: To create a merge request for release/1.0, visit:
-remote:   https://git.21-school.ru/students_repo/virginwh/D01T01.ID_1577481-1/-/merge_requests/new?merge_request%5Bsource_branch%5D=release%2F1.0
-remote: 
-To ssh://git-ssh.21-school.ru:2222/students_repo/virginwh/D01T01.ID_1577481-1.git
- * [new branch]      release/1.0 -> release/1.0
-virginwh@po-b7:~/D01T01.ID_1577481-1$ git branch -a
-  develop
-  feature/3-key
-  key-branch
-  master
-* release/1.0
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/develop
-  remotes/origin/feature/3-key
-  remotes/origin/key-branch
-  remotes/origin/master
-  remotes/origin/release/1.0
-virginwh@po-b7:~/D01T01.ID_1577481-1$ 
+Quest 8. Vim
+> Набрать... даже не знаю... Просто какое-нибудь «qwe» в терминале
+
+В терминале пошло оживление, много текстовых блоков. Наконец они кончились, и пошел читаемый текст:
+
+Привет, путник! Я библиотечный модуль главного управляющего модуля ИИ в нашей системе. Чем могу помочь? А, впрочем, кому я нужен.
+
+> Набрать: «Мне нужен. Я ищу выход из этого места»
+
+Дверь? Так вот же она. Тебе открыть?
+
+Стоп. Так не пойдет. Во всех инструкциях и текстах, что я анализировал, никогда и ничего просто так не делается. Я открою дверь, это не проблема, но сначала помоги навести порядок с документацией.
+
+Ты читал файл про Vim? Который src/history_of_vim.txt. Я очень люблю эту программу. Но, увы, файл с описанием версий побился. Я так думаю...
+
+Сейчас же уже не 2001 год? Дополни его, конечно же, в Vim. (Это важно! Для меня...) Как закончишь, внеси в журнал (файл src/files.log) в формате: путь к файлу (относительно корневой директории) — размер файла — дата и время — sha-сумма файла (предпочитаю sha256) — алгоритм вычисления sha.
+
+> Набрать: «Готово»
+
+Совсем забыл. Добавь заголовок в начале файла: «A Quick Summary Of the History of the Vim Editor». И тоже занеси это изменение в журнал.
+
+Внимание: не забудь перейти на ветку develop, вся работа должна происходить только там!
+
+Получен Quest 8. Зафиксировать исходное состояние файла src/history_of_vim.txt в журнале src/files.log. Дополнить этот файл информацией о версиях Vim после 2001 года, используя Vim. Добавить заголовок в начале файла "A Quick Summary Of the History of the Vim Editor". После каждого из этих изменений добавить запись в журнал src/files.log в формате: путь к файлу — размер файла в байтах — дата и время — sha-сумма файла — алгоритм вычисления sha.
