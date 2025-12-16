@@ -1,7 +1,7 @@
 1. Перейди в папку src:
 cd ~/D01T01.ID_1577481-1/src
 2. Создай файл и добавь команды:
-touch quest3.sh #УЖЕ ЕСТЬ
+touch quest3.sh
 echo 'mv door_management_fi door_management_files' >> quest3.sh
 echo 'cd door_management_files' >> quest3.sh
 echo 'mkdir door_configuration' >> quest3.sh
