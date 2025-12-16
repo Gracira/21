@@ -1,9 +1,2 @@
-cat: /src/files.log: No such file or directory
-constali@po-b8:~/D01T01.ID_1577481-1$ cat /src/files.log
-cat: /src/files.log: No such file or directory
-constali@po-b8:~/D01T01.ID_1577481-1$ cat src/files.log
-src/history_of_vim.txt - 0 - 1970-01-20 23:59 - NULL - sha256
-src/history_of_vim.txt - 1762 - 2025-12-16 22:43 - ff5f9927ff4f343bd2c669291c5f8830c9b1b0d3b0a51c816c4068f28e41619e - sha256
-src/history_of_vim.txt - 1780 - 2025-12-16 22:52 -  - sha256
-src/history_of_vim.txt - 1780 - 2025-12-16 22:53 - 8f2901ff0c1ce8c60e6e218229686e8ec4783536e9cb11881edae8f9ec7900f0 - sha256
-constali@po-b8:~/D01T01.ID_1577481-1$ sed -i '1s/A History of Vim/A Quick Summary Of the History of the Vim Editor/' src/history_of_vim.txt
+git show master:src/history_of_vim.txt | wc -c
+git show master:src/history_of_vim.txt | sha256sum
