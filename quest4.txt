@@ -1,69 +1,25 @@
-virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ rm key/file*
-virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ ls -la key/
-total 256
-drwxrwx--- 2 virginwh virginwh 12288 Dec 16 19:11 .
-drwxrwx--- 3 virginwh virginwh  4096 Dec 16 19:06 ..
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part10.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part11.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part12.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part13.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part14.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part15.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part16.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part17.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part18.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part19.key
--rw-rw---- 1 virginwh virginwh     3 Dec 16 19:06 part1.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part20.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part21.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part22.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part23.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part24.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part25.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part26.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part27.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part28.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part29.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part2.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part30.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part31.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part32.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part33.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part34.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part35.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part36.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part37.key
--rw-rw---- 1 virginwh virginwh     3 Dec 16 19:06 part38.key
--rw-rw---- 1 virginwh virginwh     3 Dec 16 19:06 part39.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part3.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part40.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part41.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part42.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part43.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part44.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part45.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part46.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part47.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part48.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part49.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part4.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part50.key
--rw-rw---- 1 virginwh virginwh     3 Dec 16 19:06 part51.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part52.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part53.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part54.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part55.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part56.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part57.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part58.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part59.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part5.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part60.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part6.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part7.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part8.key
--rw-rw---- 1 virginwh virginwh     2 Dec 16 19:06 part9.key
-virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ rm key/file*
-rm: cannot remove 'key/file*': No such file or directory
-virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ rm key/file*
-rm: cannot remove 'key/file*': No such file or directory
+virginwh@po-b7:~/D01T01.ID_1577481-1/src/ai_help$ cat unifier.sh
+#!/bin/bash
+
+FILES=key/*
+KEY=0
+
+for file in $FILES
+do
+    if [[ $file =~ \.key$ ]]
+    then
+        tmp=$(< $file)
+        KEY=$(($KEY + $tmp))
+    else
+        KEY=0
+        break
+    fi
+done
+
+if [ $KEY == 0 ]
+then
+    echo "Error."
+else
+    echo "Ok."
+    echo $(($KEY*2)) > main.key
+fi
