@@ -1,14 +1,136 @@
-cd ~/D01T01.ID_1577481-1/src
+virginwh@po-b7:~$ cd D01T01.ID_1577481-1
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git branch
+* develop
+  master
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git chekout -b key-branch
+git: 'chekout' is not a git command. See 'git --help'.
 
-touch quest6.sh
-echo 'cd ~/D01T01.ID_1577481-1/src/ai_help' >> quest6.sh
-echo 'bash keygen.sh' >> quest6.sh
-echo 'rm key/file*' >> quest6.sh
-echo 'bash unifier.sh' >> quest6.sh
+The most similar command is
+        checkout
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git checkout -b key-branch
+Switched to a new branch 'key-branch'
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git branch
+  develop
+* key-branch
+  master
+virginwh@po-b7:~/D01T01.ID_1577481-1$ ls -la /src/ai_help/main.key
+ls: cannot access '/src/ai_help/main.key': No such file or directory
+virginwh@po-b7:~/D01T01.ID_1577481-1$ ls -la src/ai_help/main.key
+-rw-rw---- 1 virginwh virginwh 4 Dec 16 19:41 src/ai_help/main.key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ cp src/ai_help/main.key src/ai_help/main-2.key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git add .
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git commit -m "key-branch: add main-2.key"
+[key-branch df708e2] key-branch: add main-2.key
+ Committer: Virgin Whatarmy <virginwh@po-b7.stw.21-school.ru>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
 
-cat quest6.sh
+    git config --global --edit
 
-cd ~/D01T01.ID_1577481-1
-git add .
-git commit -m "Quest 6. Rm"
-git push origin develop
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 src/ai_help/main-2.key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git push origin key-branch
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 378 bytes | 378.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: To create a merge request for key-branch, visit:
+remote:   https://git.21-school.ru/students_repo/virginwh/D01T01.ID_1577481-1/-/merge_requests/new?merge_request%5Bsource_branch%5D=key-branch
+remote: 
+To ssh://git-ssh.21-school.ru:2222/students_repo/virginwh/D01T01.ID_1577481-1.git
+ * [new branch]      key-branch -> key-branch
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git checkout -b feature/3-key
+Switched to a new branch 'feature/3-key'
+virginwh@po-b7:~/D01T01.ID_1577481-1$ cp src/ai_help/main.key src/ai_help/main-3.key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git add .
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git commit -m "feature/3-key: add main-3.key"
+[feature/3-key da5cd3c] feature/3-key: add main-3.key
+ Committer: Virgin Whatarmy <virginwh@po-b7.stw.21-school.ru>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 src/ai_help/main-3.key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git push origin feature/3-key
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 377 bytes | 377.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: To create a merge request for feature/3-key, visit:
+remote:   https://git.21-school.ru/students_repo/virginwh/D01T01.ID_1577481-1/-/merge_requests/new?merge_request%5Bsource_branch%5D=feature%2F3-key
+remote: 
+To ssh://git-ssh.21-school.ru:2222/students_repo/virginwh/D01T01.ID_1577481-1.git
+ * [new branch]      feature/3-key -> feature/3-key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git checkout key-branch
+Switched to branch 'key-branch'
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git merge feature/3-key
+Updating df708e2..da5cd3c
+Fast-forward
+ src/ai_help/main-3.key | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 src/ai_help/main-3.key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git push origin key-branch
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: To create a merge request for key-branch, visit:
+remote:   https://git.21-school.ru/students_repo/virginwh/D01T01.ID_1577481-1/-/merge_requests/new?merge_request%5Bsource_branch%5D=key-branch
+remote: 
+To ssh://git-ssh.21-school.ru:2222/students_repo/virginwh/D01T01.ID_1577481-1.git
+   df708e2..da5cd3c  key-branch -> key-branch
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git checkout -b release/1.0
+Switched to a new branch 'release/1.0'
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git merge key-branch
+Updating f3aeb6c..da5cd3c
+Fast-forward
+ src/ai_help/main-2.key | 1 +
+ src/ai_help/main-3.key | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 src/ai_help/main-2.key
+ create mode 100644 src/ai_help/main-3.key
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git push origin develop
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: To create a merge request for develop, visit:
+remote:   https://git.21-school.ru/students_repo/virginwh/D01T01.ID_1577481-1/-/merge_requests/new?merge_request%5Bsource_branch%5D=develop
+remote: 
+To ssh://git-ssh.21-school.ru:2222/students_repo/virginwh/D01T01.ID_1577481-1.git
+   f3aeb6c..da5cd3c  develop -> develop
+virginwh@po-b7:~/D01T01.ID_1577481-1$ git branch -a
+* develop
+  feature/3-key
+  key-branch
+  master
+  release/1.0
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/develop
+  remotes/origin/feature/3-key
+  remotes/origin/key-branch
+  remotes/origin/master
