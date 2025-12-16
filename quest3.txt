@@ -1,12 +1,8 @@
-Перейди в папку src:
+1. Перейди в папку src:
 cd ~/D01T01.ID_1577481-1/src
-2. Создай файл quest3.sh:
-touch quest3.sh//на компе уже есть
-3. Вставь туда эти команды:
-Находись в папке src:
-cd ~/D01T01.ID_1577481-1/src
-Создай файл и добавь команды построчно:
-echo 'mv door_management_fi door_management_files' > quest3.sh
+2. Создай файл и добавь команды:
+touch quest3.sh #УЖЕ ЕСТЬ
+echo 'mv door_management_fi door_management_files' >> quest3.sh
 echo 'cd door_management_files' >> quest3.sh
 echo 'mkdir door_configuration' >> quest3.sh
 echo 'mkdir door_map' >> quest3.sh
@@ -14,18 +10,12 @@ echo 'mkdir door_logs' >> quest3.sh
 echo 'mv *.conf door_configuration/' >> quest3.sh
 echo 'mv door_map_1.1 door_map/' >> quest3.sh
 echo 'mv *.log door_logs/' >> quest3.sh
-
-Проверь содержимое:
-cat quest3.sh
-
-Запусти скрипт:
+3. Запусти скрипт:
 bash quest3.sh
-
-Проверь модуль:
+4. Проверь что модуль работает:
 ./ai_door_management_module.sh
-
-Запушь на GitLab:
-cd ..
+5. Запушь на GitLab:
+cd ~/D01T01.ID_1577481-1
 git add .
-git commit -m "Quest 3"
+git commit -m "Quest 3. Dirs & Files"
 git push origin develop
