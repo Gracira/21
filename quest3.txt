@@ -1,4 +1,8 @@
 
-  2006 May 7  - Vim 7.0:   Spell checking, code completion, tab pages
+sed -i 's/  2001 Sep 26 - Vim 6.0:  folding, plugins, vertical split20/  2001 Sep 26 - Vim 6.0:  folding, plugins, vertical split/' src/history_of_vim. txt
+
+cat >> src/history_of_vim. txt << 'EOF'
+  2006 May 7  - Vim 7.0:  Spell checking, code completion, tab pages
   2016 Sep 12 - Vim 8.0:  Asynchronous I/O, packages, timers
   2022 Jun 28 - Vim 9.0:  Vim9 script, performance improvements
+EOF
