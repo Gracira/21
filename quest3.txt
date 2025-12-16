@@ -1,1 +1,13 @@
-echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim.txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" >> src/files.log
+virginwh@po-b7:~/D01T01.ID_1577481-1$ echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim.txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" >> src/files. log
+virginwh@po-b7:~/D01T01.ID_1577481-1$ cat src/files.log
+src/history_of_vim.txt -  - 2025-12-16 21:21 - 5fd929cdddbf6bfaafc3f33c38e58ea5d54b0da6bea9be9ae2bf81357d7b0293 - sha256
+src/history_of_vim.txt - 1956 - 2025-12-16 21:55 - c674c9309fb0c5460115dc45dff92a5313d47ceba8eb684beadaa68466d939a2 - sha256
+virginwh@po-b7:~/D01T01.ID_1577481-1$ cat src/files.log
+src/history_of_vim.txt -  - 2025-12-16 21:21 - 5fd929cdddbf6bfaafc3f33c38e58ea5d54b0da6bea9be9ae2bf81357d7b0293 - sha256
+src/history_of_vim.txt - 1956 - 2025-12-16 21:55 - c674c9309fb0c5460115dc45dff92a5313d47ceba8eb684beadaa68466d939a2 - sha256
+virginwh@po-b7:~/D01T01.ID_1577481-1$ echo "src/history_of_vim.txt - $(stat -c %s src/history_of_vim.txt) - $(date '+%Y-%m-%d %H:%M') - $(sha256sum src/history_of_vim.txt | awk '{print $1}') - sha256" >> src/files.log
+virginwh@po-b7:~/D01T01.ID_1577481-1$ cat src/files.log
+src/history_of_vim.txt -  - 2025-12-16 21:21 - 5fd929cdddbf6bfaafc3f33c38e58ea5d54b0da6bea9be9ae2bf81357d7b0293 - sha256
+src/history_of_vim.txt - 1956 - 2025-12-16 21:55 - c674c9309fb0c5460115dc45dff92a5313d47ceba8eb684beadaa68466d939a2 - sha256
+src/history_of_vim.txt - 2005 - 2025-12-16 22:19 - ade51b22a9f9208852d3abfcdfe5b73e7547cb2fa7ea05cdbd9a806e7d4110e5 - sha256
+virginwh@po-b7:~/D01T01.ID_1577481-1$ 
