@@ -1,5 +1,5 @@
 git add . 
-git commit -m "Quest 8. Vim: updated history and added header with journal"
+git commit -m "Quest 8. Vim"
 git push origin develop
 
 git log --oneline -1
