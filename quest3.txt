@@ -10,3 +10,8 @@ echo '3. Изменить STATUS:  CLOSED на STATUS: OPEN' >> quest5.txt
 echo '4. Ctrl+O (сохранить)' >> quest5.txt
 echo '5. Enter (подтвердить)' >> quest5.txt
 echo '6. Ctrl+X (выйти)' >> quest5.txt
+
+cd ~/D01T01.ID_1577481-1
+git add . 
+git commit -m "Quest 5. Conf"
+git push origin develop
