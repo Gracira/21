@@ -1,20 +1,93 @@
-Quest 4. Kill him
-> Читать терминал
+#!/bin/bash
 
-После успешного запуска src/ai_door_management_module.sh активизируется подмодуль ai_door_control. Что бы ты ни делал, повсюду раздражающие следы его деятельности.
+count=0
 
-> Что он делает?
+echo 'Здравствуйте! Ты запустил модуль ИИ, контролирующий все двери комплекса.'
+echo 'Загрузка необходимых файлов с данными...'
+if [ -d "door_management_files" ]; then
+  uname_out="$(uname -s)"
+  case "${uname_out}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+  esac
+  
+  cd door_management_files
+  echo
+  echo
+  echo '-------------------------------------' 
+  echo 'Загрузка файлов конфигурации дверей...'
+  echo
+  if [ -d "door_configuration" ]; then
+    cd door_configuration
+    for file in `find . -maxdepth 1 -type f -name "*.conf"`
+    do
+      wc -l $file;
+      if [ "$machine" == "Mac" ]
+      then
+	      stat -f %z $file;
+      else
+        stat -c %s $file;
+      fi
+      
+      cat $file;
+      count=$[ $count + 1 ]
+    done
+    cd ..
+  else
+    echo "door_configuration: No such file or directory"
+  fi
 
-По всей видимости, этот модуль осуществляет обход всех запертых дверей. И контролирует степень их закрытости. Это явно не то, что ты хотел, верно?
+  echo
+  echo
+  echo '-------------------------------------' 
+  echo 'Загрузка карты дверей...'
+  echo
+  if [ -d "door_map" ]; then
+    cd door_map
+    cat door_map_1.1
+    if [ $? -eq 0 ]; then
+      count=$[ $count + 1 ]
+    fi
+    cd ..
+  else
+    echo "door_map: No such file or directory"
+  fi
 
-> И что теперь?
+  echo
+  echo  
+  echo '-------------------------------------' 
+  echo 'Чтение логов дверей...'
+  echo
+  if [ -d "door_logs" ]; then
+    cd door_logs
+    for file in `find . -maxdepth 1 -type f -name "*.log"`
+    do
+      wc -l $file;
+      if [ "$machine" == "Mac" ]
+      then
+	        stat -f %z $file;
+      else
+          stat -c %s $file;
+      fi
+      cat $file;
+      count=$[ $count + 1 ]
+    done
+    cd ..
+  else
+    echo "door_logs: No such file or directory"
+  fi
 
-Нет информации. Это твоя игра. Но если бы играл я, то бы попробовал разобраться с этим парнем. «Разобраться» — понимаешь, что я имею в виду?
+  cd ..
+else
+  echo "door_management_files: No such file or directory"
+fi
 
-> Если честно, не очень.
-
-Kill.
-
-И не забудь задокументировать все действия в quest4.sh. Пригодится. Кто знает, сколько еще таких неудобных модулей встретится на пути.
-
-Получен Quest 4. Остановить запущенный процесс модуля src/ai_door_control.sh. Все примененные команды зафиксировать в файле src/quest4.sh и поместить под версионный контроль.
+echo
+if [ $count -eq 34 ]; then
+  ./ai_door_control.sh &
+else
+  echo "Ошибка загрузки данных... Протокол ИИ прерван."
+fi
