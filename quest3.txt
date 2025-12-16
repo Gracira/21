@@ -19,3 +19,23 @@ cd ~/D01T01.ID_1577481-1
 git add .
 git commit -m "Quest 3. Dirs & Files"
 git push origin develop
+
+
+ai_door_control.sh            ai_initial_module.sh   files.log      history_of_vim.txt                  quest3.sh
+ai_door_management_module.sh  ai_module_2.sh         git_for_human  history_of_vi.txt                   quest4.sh
+ai_help                       door_management_files  hello.txt      important_data_for_ai_module_2.txt
+virginwh@po-b7:~/D01T01.ID_1577481-1/src$ ps aux | grep ai_door_control.sh
+virginwh  128376  0.0  0.2 689692 97296 ?        Sl   15:29   0:00 /usr/bin/kate -b /home/virginwh/D01T01.ID_1577481-1/src/ai_door_control.sh
+virginwh  128491  0.0  0.2 689692 96792 ?        Sl   15:31   0:00 /usr/bin/kate -b /home/virginwh/D01T01.ID_1577481-1/src/ai_door_control.sh
+virginwh  129707  0.0  0.0   9284  2048 pts/1    S+   15:52   0:00 grep ai_door_control.sh
+virginwh@po-b7:~/D01T01.ID_1577481-1/src$ pkill -f ai_door_control.sh
+virginwh@po-b7:~/D01T01.ID_1577481-1/src$ ps aux | grep ai_door_cntrol.sh
+virginwh  129765  0.0  0.0   9284  2176 pts/1    S+   15:53   0:00 grep ai_door_cntrol.sh
+virginwh@po-b7:~/D01T01.ID_1577481-1/src$ ls -la ~/D01T01.ID_1577481-1/src/ai_door_cntrol.sh
+ls: cannot access '/home/virginwh/D01T01.ID_1577481-1/src/ai_door_cntrol.sh': No such file or directory
+virginwh@po-b7:~/D01T01.ID_1577481-1/src$ 
+
+
+
+
+
