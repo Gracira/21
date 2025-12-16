@@ -1,1 +1,5 @@
 ls -la src/ai_help/main.key
+cp src/ai_help/main.key src/ai_help/main-2.key
+git add .
+git commit -m "key-branch: add main-2.key"
+git push origin key-branch
