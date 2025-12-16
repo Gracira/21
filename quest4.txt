@@ -1,12 +1,24 @@
 #!/bin/bash
 
-mkdir key
+FILES=key/*
+KEY=0
 
-touch key/file{1..300}
-
-for i in {1..60}
+for file in $FILES
 do
-    echo $((RANDOM%10 + 1)) > key/part${i}.key
+    if [[ $file =~ \.key$ ]]
+    then
+        tmp=$(< $file)
+        KEY=$(($KEY + $tmp))
+    else
+        KEY=0
+        break
+    fi
 done
 
-echo "Generation completed"
+if [ $KEY == 0 ]
+then
+    echo "Error."
+else
+    echo "Ok."
+    echo $(($KEY*2)) > main.key
+fi
