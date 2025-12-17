@@ -1,4 +1,3 @@
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ cat src/float_compare.c
 #include <stdio.h>
 #include <math.h>
  
@@ -6,9 +5,10 @@ double fun();
  
 int main() {
     double res = fun();
+    double eps = 1e-6;
   
     // CHANGE THIS IF - AI
-    if (res == 0)
+    if (fabs(res) < eps)
        printf("OK!");
  
     return 0;
