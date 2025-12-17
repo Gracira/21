@@ -1,12 +1,8 @@
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
-Hello, AI!virginwh@kr-h5:~/D02T02.ID_1nano src/hello.c
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ cat src/hello.c
-#include <stdio.h>
-
-int main() {
-        printf("Hello, AI!");
-        return 0;
-}
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
-Hello, AI!virginwh@kr-h5:~/D02T02.ID_1577482-1$ 
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ cat -A src/hello.c
+#include <stdio.h>$
+$
+int main() {$
+^Iprintf("Hello, AI!");$
+^Ireturn 0;$
+}$
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ 
