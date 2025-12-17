@@ -1,66 +1,20 @@
-important_function.c:(.text+0xd4): undefined reference to `pow'
-/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
-/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
-collect2: error: ld returned 1 exit status
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ /.important_function
-bash: /.important_function: No such file or directory
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ src/ls
-bash: src/ls: No such file or directory
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ src/ls
-bash: src/ls: No such file or directory
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ src/ls -la
-bash: src/ls: No such file or directory
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ cd src
-virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ ls
-arithmetic.c  float_compare.c  hello.c  important_function.c  max.c  named_hello.c
-virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cat important_function.c
-#include <stdio.h>
-#include <math.h>
+Quest 6. Be careful with the floating
+> Задание выполнено!
 
-int main() {
-  double x, y;
-  
-  if (scanf("%lf", &x) != 1) {
-    printf("n/a");
-    return 0;
-  }
-  
-  if (x == 0 || x * x / 2 == 0) {
-    printf("n/a");
-    return 0;
-  }
-  
-  y = 0.007 * pow(x, 4) 
-      + ((22.8 * cbrt(x) - 1000) * x + 3) / (x * x / 2) 
-      - x * pow(10 + x, 2.0 / x) 
-      - 1.01;
-  
-  printf("%.1f", y);
-  
-  return 0;
-}
-virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd -
-/home/virginwh/D02T02.ID_1577482-1
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ cd -
-/home/virginwh/D02T02.ID_1577482-1/src
-virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd -
-/home/virginwh/D02T02.ID_1577482-1
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/important_function.c -o important_function
-/usr/bin/ld: /tmp/ccnRPYA8.o: in function `main':
-important_function.c:(.text+0xd4): undefined reference to `pow'
-/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
-/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
-collect2: error: ld returned 1 exit status
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/important_function.c -o important_function
-/usr/bin/ld: /tmp/cc8dHQJ4.o: in function `main':
-important_function.c:(.text+0xd4): undefined reference to `pow'
-/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
-/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
-collect2: error: ld returned 1 exit status
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/important_function.c -o important_function
-/usr/bin/ld: /tmp/cce04Jej.o: in function `main':
-important_function.c:(.text+0xd4): undefined reference to `pow'
-/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
-/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
-collect2: error: ld returned 1 exit status
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ 
+Хорошо. Пока ты делал это задание, я обнаружил у себя еще одну проблему.
+Нужно, чтобы ты исправил и ее тоже.
+Я не могу... Стоп. В цикл хотел меня загнать? Не выйдет. 
+Я не могу сравнить значение переменной с нулем.
+Скорее всего, разработчик не учел особенность вычислительных методов.
+В случае, когда необходимо сравнение с нулем, 
+то лучше для этого использовать небольшую величину «эпсилон», 
+потому что точность расчетов меня подводит.
+Посмотри файл `src/float_compare.c` и сделай так, 
+чтобы он в итоге вывел «OK!».
+Только без читерства. Знаю я вас, «человеков».
+> Сколько еще заданий будет?
+
+Сколько надо — столько и будет. Если сделаешь это задание быстро, 
+то обещаю, помогу тебе с дверью. 
+Держи мое механическое слово, «мясное» существо. 
+Получен Quest 6. Изменить программу src/float_compare.c так, чтобы в результате вывелось: «OK!». Использовать сравнение с небольшой величиной (порядка 1E-6). Допускается объявление дополнительных переменных или констант.
