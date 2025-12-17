@@ -1,10 +1,3 @@
-virginwh@kr-h5:~$ cd D02T02.ID_1577482-1
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ nano src/named_hello.c
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror - Wextra src/named_hello.c -o named_hello
-gcc: error: -E or -x required when input is from standard input
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ nano src/named_hello.c
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror - Wextra src/named_hello.c -o named_hello
-gcc: error: -E or -x required when input is from standard input
 virginwh@kr-h5:~/D02T02.ID_1577482-1$ cat src/named_hello.c
 #include <stdio.h>
 
@@ -19,3 +12,18 @@ virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/named_hello,
 collect2: error: ld returned 1 exit status
 virginwh@kr-h5:~/D02T02.ID_1577482-1$ cd src
 virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ ls
+arithmetic.c  float_compare.c  hello.c  named_hello.c
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd /D02T02.ID_1577482-1
+bash: cd: /D02T02.ID_1577482-1: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd /D02T02.ID_1577482-1
+bash: cd: /D02T02.ID_1577482-1: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd /D02T02.ID_1577482-1
+bash: cd: /D02T02.ID_1577482-1: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd -
+/home/virginwh/D02T02.ID_1577482-1
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/named_hello.c -o named_hello
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
+bash: ./hello: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./named_hello
+123
+Hello, 123!virginwh@kr-h5:~/D02T02.ID_1577482-1$ 
