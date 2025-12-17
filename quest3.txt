@@ -1,18 +1,11 @@
-#include <stdio.h>
+nano src/arithmetic.c
 
-int main() {
-  double x, y;
-  
-  if (scanf("%lf %lf", &x, &y) != 2) {
-    printf("n/a");
-    return 0;
-  }
-  
-  if (x * x + y * y < 25) {
-    printf("GOTCHA");
-  } else {
-    printf("MISS");
-  }
-  
-  return 0;
-}
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/important_function.c -o important_function -lm
+
+echo "123" | ./arithmetic
+./arithmetic
+
+git add src/arithmetic.c
+git commit -m "Nazvanie"
+git push origin dvelop
+rm arithmetic
