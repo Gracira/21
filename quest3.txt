@@ -1,12 +1,1 @@
-virginwh@kr-h5:~/Downloads$ tar -xf code-stable-x64-1765353460.tar.gz
-virginwh@kr-h5:~/Downloads$ mv VSCode-linux-x64 ~/vscode
-virginwh@kr-h5:~/Downloads$ cd -
-/home/virginwh
-virginwh@kr-h5:~$ cd ~/vscode
-virginwh@kr-h5:~/vscode$ ./code
-[193823:1217/141136.129007:FATAL:sandbox/linux/suid/client/setuid_sandbox_host.cc:166] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /home/virginwh/vscode/chrome-sandbox is owned by root and has mode 4755.
-Trace/breakpoint trap (core dumped)
-virginwh@kr-h5:~/vscode$ ./code
-[193839:1217/141149.524158:FATAL:sandbox/linux/suid/client/setuid_sandbox_host.cc:166] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /home/virginwh/vscode/chrome-sandbox is owned by root and has mode 4755.
-Trace/breakpoint trap (core dumped)
-virginwh@kr-h5:~/vscode$ 
+https://github.com/VSCodium/vscodium/releases
