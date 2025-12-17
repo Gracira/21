@@ -1,26 +1,46 @@
-Quest: Level 1. Room 3
-Quest 1. Introducing
-Посмотрев на открытый в терминале каталог, ты находишь еще один модуль ИИ.
+virginwh@kr-h5:~$ ls
+D01T01.ID_1577481-1  D02T02.ID_1577482-1  Desktop  Documents  Downloads  goinfre  lost+found  Music  Pictures  Public  snap  Templates  Videos
+virginwh@kr-h5:~$ cd D02T02.ID_1577482-1 
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ pwd
+/home/virginwh/D02T02.ID_1577482-1
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ ls -la
+total 84
+drwxrwx---  9 virginwh virginwh  4096 Dec 17 09:18 .
+drwxr-xr-x 19 virginwh virginwh  4096 Dec 17 11:08 ..
+-rw-rw----  1 virginwh virginwh     0 Dec 17 09:18 ACTIVE_TAG_FILES.txt
+-rw-rw----  1 virginwh virginwh     0 Dec 17 09:18 CHANGELOG
+drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 code-samples
+drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 data-samples
+drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 datasets
+drwxrwx---  8 virginwh virginwh  4096 Dec 17 09:20 .git
+-rw-rw----  1 virginwh virginwh  2380 Dec 17 09:18 .gitattributes
+-rw-rw----  1 virginwh virginwh   937 Dec 17 09:18 .gitignore
+-rw-rw----  1 virginwh virginwh    19 Dec 17 09:18 LICENSE
+drwxrwx---  3 virginwh virginwh  4096 Dec 17 09:18 materials
+drwxrwx---  5 virginwh virginwh  4096 Dec 17 09:18 misc
+-rw-rw----  1 virginwh virginwh 33452 Dec 17 09:18 README.md
+drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 src
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ ls
+ACTIVE_TAG_FILES.txt  CHANGELOG  code-samples  data-samples  datasets  LICENSE  materials  misc  README.md  src
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ nano src/hello.c
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ cat src/hello.c
+#include<stdio.h>
 
-> Запустить ai
-
-Инициализация модулей... Предупреждение! 
-Запуск интерактивной оболочки... Предупреждение! 
-Проверка модулей... Предупреждение! 
-Инициализация GCC... 
-Предупреждение: для корректного продолжения работы не найден модуль представления src/hello.c... 
-Добавьте модуль представления!
-Посмотрев остальные файлы в текущей директории, ты понимаешь, что стоит обратить внимание на репозиторий. Однако в папке src репозитория ты не находишь ничего похожего на этот модуль представления. Видимо, придется написать его самому.
-
-Во время просмотра каталога ты также замечаешь, что практически весь код ИИ написан на стандарте С11 языка С с использованием компилятора gcc и стандартной библиотеки. По всей видимости, следует придерживаться этого правила, чтобы сохранить совместимость.
-
-Разработанный тобой модуль представления должен выводить на экран терминала приветствие. Пусть это будет: «Hello, AI!». Нужно также не забыть запушить код созданного модуля.
-
-Получен Quest 1. Создать программу src/hello.c, которая должна вывести на экран фразу: «Hello, AI!», используя функции форматированного вывода из стандартной библиотеки. Здесь и далее все программы должны быть написаны на языке С стандарта C11 с использованием компилятора gcc, флагов -Wall, -Werror, -Wextra и стилевой нормы Google C++ Style Guide. Пушить в git необходимо только исходные файлы с кодом и файлы с данными (при необходимости) в директорию src, ветку develop. Разрешено подключать только заголовочный файл <stdio.h>.
-ВАЖНО! Запрещено выполнять системные вызовы, используя функцию system() и другие аналогичные ей функции, которые могут обращаться напрямую к ядру системы. Данный запрет распространяется на все последующие задачи.
-
-Внимание: с этого дня твои решения будут проверяться автотестами. В данном и всех последующих квестах необходимо строго придерживаться приведенных в таблице с примерами форматов ввода и вывода данных! Вывод не должен заканчиваться переносом строки.
-
-Входные данные
-Выходные данные
-Hello, AI!
+int main() {
+        printf("Hello, AI!");
+        return 0;
+}
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello ./hello
+gcc: fatal error: input file ‘hello’ is the same as output file
+compilation terminated.
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
+Hello, AI!virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello ./hello
+gcc: fatal error: input file ‘hello’ is the same as output file
+compilation terminated.
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello ./hello
+gcc: fatal error: input file ‘hello’ is the same as output file
+compilation terminated.
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
+Hello, AI!virginwh@kr-h5:~/D02T02.ID_1577482-1$ 
