@@ -1,46 +1,12 @@
-virginwh@kr-h5:~$ ls
-D01T01.ID_1577481-1  D02T02.ID_1577482-1  Desktop  Documents  Downloads  goinfre  lost+found  Music  Pictures  Public  snap  Templates  Videos
-virginwh@kr-h5:~$ cd D02T02.ID_1577482-1 
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ pwd
-/home/virginwh/D02T02.ID_1577482-1
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ ls -la
-total 84
-drwxrwx---  9 virginwh virginwh  4096 Dec 17 09:18 .
-drwxr-xr-x 19 virginwh virginwh  4096 Dec 17 11:08 ..
--rw-rw----  1 virginwh virginwh     0 Dec 17 09:18 ACTIVE_TAG_FILES.txt
--rw-rw----  1 virginwh virginwh     0 Dec 17 09:18 CHANGELOG
-drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 code-samples
-drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 data-samples
-drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 datasets
-drwxrwx---  8 virginwh virginwh  4096 Dec 17 09:20 .git
--rw-rw----  1 virginwh virginwh  2380 Dec 17 09:18 .gitattributes
--rw-rw----  1 virginwh virginwh   937 Dec 17 09:18 .gitignore
--rw-rw----  1 virginwh virginwh    19 Dec 17 09:18 LICENSE
-drwxrwx---  3 virginwh virginwh  4096 Dec 17 09:18 materials
-drwxrwx---  5 virginwh virginwh  4096 Dec 17 09:18 misc
--rw-rw----  1 virginwh virginwh 33452 Dec 17 09:18 README.md
-drwxrwx---  2 virginwh virginwh  4096 Dec 17 09:18 src
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ ls
-ACTIVE_TAG_FILES.txt  CHANGELOG  code-samples  data-samples  datasets  LICENSE  materials  misc  README.md  src
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ nano src/hello.c
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
+Hello, AI!virginwh@kr-h5:~/D02T02.ID_1nano src/hello.c
 virginwh@kr-h5:~/D02T02.ID_1577482-1$ cat src/hello.c
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
         printf("Hello, AI!");
         return 0;
 }
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello ./hello
-gcc: fatal error: input file ‘hello’ is the same as output file
-compilation terminated.
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
-Hello, AI!virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello ./hello
-gcc: fatal error: input file ‘hello’ is the same as output file
-compilation terminated.
-virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello ./hello
-gcc: fatal error: input file ‘hello’ is the same as output file
-compilation terminated.
 virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/hello.c -o hello
 virginwh@kr-h5:~/D02T02.ID_1577482-1$ ./hello
 Hello, AI!virginwh@kr-h5:~/D02T02.ID_1577482-1$ 
