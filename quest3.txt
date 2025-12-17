@@ -1,3 +1,19 @@
+important_function.c:(.text+0xd4): undefined reference to `pow'
+/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
+/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ /.important_function
+bash: /.important_function: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ src/ls
+bash: src/ls: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ src/ls
+bash: src/ls: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ src/ls -la
+bash: src/ls: No such file or directory
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ cd src
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ ls
+arithmetic.c  float_compare.c  hello.c  important_function.c  max.c  named_hello.c
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cat important_function.c
 #include <stdio.h>
 #include <math.h>
 
@@ -23,3 +39,28 @@ int main() {
   
   return 0;
 }
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd -
+/home/virginwh/D02T02.ID_1577482-1
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ cd -
+/home/virginwh/D02T02.ID_1577482-1/src
+virginwh@kr-h5:~/D02T02.ID_1577482-1/src$ cd -
+/home/virginwh/D02T02.ID_1577482-1
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/important_function.c -o important_function
+/usr/bin/ld: /tmp/ccnRPYA8.o: in function `main':
+important_function.c:(.text+0xd4): undefined reference to `pow'
+/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
+/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/important_function.c -o important_function
+/usr/bin/ld: /tmp/cc8dHQJ4.o: in function `main':
+important_function.c:(.text+0xd4): undefined reference to `pow'
+/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
+/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ gcc -Wall -Werror -Wextra src/important_function.c -o important_function
+/usr/bin/ld: /tmp/cce04Jej.o: in function `main':
+important_function.c:(.text+0xd4): undefined reference to `pow'
+/usr/bin/ld: important_function.c:(.text+0xf3): undefined reference to `cbrt'
+/usr/bin/ld: important_function.c:(.text+0x185): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+virginwh@kr-h5:~/D02T02.ID_1577482-1$ 
