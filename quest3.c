@@ -1,3 +1,5 @@
+Вывод счета Сверху над границей, Типа сверху слово Счёт снизу счёт например 1 : 2  и далее уже снизу сама рамка, больше ничего не меняй. Такк же сделать вместе где я попросил рассчёты
+
 #include <stdio.h>
 int printPole(int width, int height, int YLeftRocket, int YRightRocket, int XBall, int YBall, int Score);
 void PrintLeftRocket();
@@ -78,7 +80,7 @@ int main() {
                 }             
                 printf("\033[2J\033[H");    
                 
-                // Координат для отрисовки мяча XBall, YBall
+                // Координат для отрисовки мяча XBall, YBall НАДО ТУТ СДЕЛАТЬ 
                 
                 printPole(80, 25, LeftY, RightY, XBall, YBall, Score);
         }
